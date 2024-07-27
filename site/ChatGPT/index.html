@@ -1,0 +1,497 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Proxy/">
+      
+      
+      
+      <link rel="icon" href="../image/sakura.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30">
+    
+    
+      
+        <title>优雅地使用ChatGPT - 从科学上网到优雅地使用ChatGPT</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chatgpt-cs-000" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="从科学上网到优雅地使用ChatGPT" class="md-header__button md-logo" aria-label="从科学上网到优雅地使用ChatGPT" data-md-component="logo">
+      
+  <img src="../image/sakura.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            从科学上网到优雅地使用ChatGPT
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              优雅地使用ChatGPT
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="从科学上网到优雅地使用ChatGPT" class="md-nav__button md-logo" aria-label="从科学上网到优雅地使用ChatGPT" data-md-component="logo">
+      
+  <img src="../image/sakura.png" alt="logo">
+
+    </a>
+    从科学上网到优雅地使用ChatGPT
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Home/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    教程介绍
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Proxy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    如何科学上网
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    优雅地使用ChatGPT
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    优雅地使用ChatGPT
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chatgpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      开始访问 ChatGPT 的官网
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chatgpt_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      注册ChatGPT的账号
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chatgpt-plus" class="md-nav__link">
+    <span class="md-ellipsis">
+      付费使用ChatGPT的 Plus💎 服务
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chatgpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      开始访问 ChatGPT 的官网
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chatgpt_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      注册ChatGPT的账号
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chatgpt-plus" class="md-nav__link">
+    <span class="md-ellipsis">
+      付费使用ChatGPT的 Plus💎 服务
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="chatgpt-cs-000">ChatGPT 的使用—— CS 0.0.0</h1>
+<blockquote>
+<p>前言：ChatGPT是目前世界上最先进的人工智能助手，它可以帮助你阅读文献、分析代码、撰写代码，甚至可以帮助你查找文献、分析数据等功能，十分强大。作为一名计算机科学专业的 Freshman，如果你不会使用ChatGPT帮助你分析和解决问题，那么你在起跑线上就已经落后别人一大截了。</p>
+</blockquote>
+<div class="admonition tip">
+<p class="admonition-title">先决条件</p>
+<p>在阅读本教程之前，你应该已经掌握了：1.如何进行科学上网  2.基本的计算机知识</p>
+</div>
+<h2 id="chatgpt">开始访问 ChatGPT 的官网</h2>
+<p>相信很多人一开始都不知道如何访问ChatGPT的官网，更有甚至被假的ChatGPT官网所欺骗，因此，我们首先要能够访问ChatGPT的官网，并尝试运用一些免费的功能。</p>
+<div class="admonition caution">
+<p class="admonition-title">注意科学上网的节点</p>
+<p>ChatGPT的官网，毫无疑问需要使用科学上网的手段才能访问。请注意，ChatGPT目前不支持的国家和地区是：中国大陆、<strong>中国香港</strong>、<strong>俄罗斯</strong>。注意选节点的时候不要选中国香港。万一不慎选择了中国香港，被OpenAI封了IP，可以尝试<strong>换一个浏览器</strong>或者换<strong>无痕模式</strong>进行访问。</p>
+</div>
+<p>ChatGPT的官网是：<a href="https://chatgpt.com">https://chatgpt.com</a>，你首先需要开启代理服务，选择一个被允许的地区节点（如日本、韩国、新加坡）。开启完代理服务后，可以直接点击链接或在浏览器中输入该网站进行访问。访问成功的界面如下图</p>
+<p><img alt="C1" src="../src/C1.png" /></p>
+<p>在没有注册之前，你只能够使用ChatGPT的部分功能，要想使用目前最强大的模型，你需要进行注册乃至付费。</p>
+<h2 id="chatgpt_1">注册ChatGPT的账号</h2>
+<div class="admonition tip">
+<p class="admonition-title">先决条件</p>
+<p>注册 ChatGPT 的账号，首先需要你有一个非中国大陆地区的邮箱地址，可以使用谷歌的Gmail邮箱。关于Gmail邮箱的注册，可以参考：<a href="https://blog.csdn.net/huayanhuicui/article/details/137236352">多图详细教你注册Google（Gmail）新账号，常见问题和注意事项-CSDN博客</a></p>
+</div>
+<p>首先点击ChatGPT聊天界面右上角的【注册】按钮，进入注册页面，填写你的邮箱，点击【继续】后，再输入你要设定的密码。</p>
+<p><img alt="C2" src="../src/C2.png" /></p>
+<p>点击【继续】，会出现这样的界面</p>
+<p><img alt="C3" src="../src/C3.png" /></p>
+<p>这时候查收你的电子邮件，点击电子邮件中的链接，出现这样的界面即为成功</p>
+<p><img alt="C4" src="../src/C4.png" /></p>
+<p>填写个人信息后，点击【同意】，即可完成注册。</p>
+<div class="admonition bug">
+<p class="admonition-title">可能出现的Bug</p>
+<p>在点击同意后，可能会提示【Oops, an error occurred!】，并且点击【Try again】无反应，这时候不要惊慌🤔，有可能你已经完成了注册。你可以尝试再次进入<a href="https://chatgpt.com">ChatGPT</a>，点击右上角的【登录】，输入你刚刚注册的邮箱和密码，即可登录成功。</p>
+</div>
+<p>完成注册并登录后，界面是这样的，你会发现多了很多功能，继续探索吧！</p>
+<p><img alt="C5" src="../src/C5.png" /></p>
+<h2 id="chatgpt-plus">付费使用ChatGPT的 Plus💎 服务</h2>
+<p>事实上，ChatGPT的免费版已经支持目前<strong>最强大</strong>的模型 ChatGPT-4o（截至发文前），只不过有一定的速度限制，如果你想无限量的使用ChatGPT的话，就需要订阅<strong>20美元/月（约合人民币144元左右）</strong>的ChatGPT Plus 服务。</p>
+<div class="admonition info">
+<p class="admonition-title">经济性的建议</p>
+<p>截至发文前（2024.7.27），ChatGPT的免费版和ChatGPT Plus <strong>在模型上没有区别</strong>，都是最强大的GPT-4o模型，唯一的区别就是ChatGPT<strong>免费版有速度限制</strong>，每小时只能发送一定的消息，而Plus用户没有限制。如果你的使用量不大的话，不推荐现在升级Plus，可以等待<strong>更强大</strong>的模型出现。</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">先决条件</p>
+<p>如果你有国外的信用卡，可以直接点击聊天界面的【升级套餐】 进行升级。</p>
+<p>下面这种方法适合于没有国外信用卡的用户，但你需要有一个<strong><em>美区</em></strong> Apple Store 账户和一台<strong><em>苹果设备 </em></strong>。</p>
+<p>如何注册美区账号参见：<a href="https://kerrynotes.com/register-american-apple-id/#google_vignette">【2024年】注册美国区Apple ID保姆级教程 - Kerry的学习笔记 (kerrynotes.com)</a>，但是注册不够稳定，很容易出现注册失败的问题。建议开无痕模式+代理的方法进行注册。</p>
+</div>
+<p>首先确保你的苹果设备能够<strong>开启代理服务</strong>，或者<strong>使用局域网</strong>使得苹果设备能够共享局域网内的<strong>代理服务</strong>。教程见：<a href="https://clashios.com/clash-for-ios-tutorial/">Clash iOS 版使用教程 | Stash iOS 使用教程-Clash 爱好者</a>、<a href="https://blog.mebi.me/post/clash-speed-other-devices">使用 Clash 加速同一局域网下其他设备 | 米白博客 (mebi.me)</a>，总之，要让你的Apple 设备能够正常访问Google等网站。</p>
+<p>然后在你的Apple设备上登录你刚刚注册的美区账号（要一直保持代理开启），登陆完成后，点击Apple Store 搜索 ChatGPT，下载ChatGPT的Apple 应用版本，注意不要下载错了</p>
+<p><img alt="C6" src="../src/C6.jpg" /></p>
+<p>下载完成后，打开应用，使用你刚刚注册的账号进行登录，然后点击左下角的省略号，在里面找到【Subscribe Plus】类似的选项，这个时候就可以用你的<strong>AppStore账户的余额</strong>来进行支付啦。</p>
+<p><img alt="C8" src="../src/C8.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">如何科学地充值AppStore余额</p>
+<p>一般要充值AppStore的余额，也需要海外信用卡。这里介绍一种科学的方法充值AppStore。</p>
+<p>首先在某鱼上搜索 “美区礼品卡”相关字样，寻找价格合适的进行购买，得到兑换码后，回到你的AppStore（不要忘记挂代理）进行兑换即可。</p>
+</div>
+<p><img alt="C9" src="../src/C9.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>

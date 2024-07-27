@@ -1,0 +1,15 @@
+site_name: 从科学上网到优雅地使用ChatGPT
+nav:
+    - 教程介绍: Home.md
+    - 如何科学上网: Proxy.md
+    - 优雅地使用ChatGPT: ChatGPT.md
+theme:
+  name: material
+  logo: image/sakura.png
+  favicon: image/sakura.png
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+markdown_extensions:
+  - admonition
+  - codehilite
