@@ -1,0 +1,727 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Home/">
+      
+      
+        <link rel="next" href="../ChatGPT/">
+      
+      
+      <link rel="icon" href="../image/sakura.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30">
+    
+    
+      
+        <title>如何科学上网 - 从科学上网到优雅地使用ChatGPT</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cs-000" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="从科学上网到优雅地使用ChatGPT" class="md-header__button md-logo" aria-label="从科学上网到优雅地使用ChatGPT" data-md-component="logo">
+      
+  <img src="../image/sakura.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            从科学上网到优雅地使用ChatGPT
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              如何科学上网
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="从科学上网到优雅地使用ChatGPT" class="md-nav__button md-logo" aria-label="从科学上网到优雅地使用ChatGPT" data-md-component="logo">
+      
+  <img src="../image/sakura.png" alt="logo">
+
+    </a>
+    从科学上网到优雅地使用ChatGPT
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Home/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    教程介绍
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    如何科学上网
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    如何科学上网
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、如何正确的科学上网
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、如何正确的科学上网">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i" class="md-nav__link">
+    <span class="md-ellipsis">
+      I. 什么是科学上网—代理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii" class="md-nav__link">
+    <span class="md-ellipsis">
+      II.如何在你的计算机上使用代理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II.如何在你的计算机上使用代理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clash" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clash教程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      购买代理提供商
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      最后一步，开启科学上网
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      注意事项
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、程序员必备的科学网站
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、程序员必备的科学网站">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chrome" class="md-nav__link">
+    <span class="md-ellipsis">
+      谷歌浏览器 Chrome
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stack-overflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stack Overflow ——优秀的编程问答社区
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Github
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ChatGPT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    优雅地使用ChatGPT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、如何正确的科学上网
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、如何正确的科学上网">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i" class="md-nav__link">
+    <span class="md-ellipsis">
+      I. 什么是科学上网—代理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ii" class="md-nav__link">
+    <span class="md-ellipsis">
+      II.如何在你的计算机上使用代理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="II.如何在你的计算机上使用代理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clash" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clash教程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      购买代理提供商
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      最后一步，开启科学上网
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      注意事项
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、程序员必备的科学网站
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、程序员必备的科学网站">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chrome" class="md-nav__link">
+    <span class="md-ellipsis">
+      谷歌浏览器 Chrome
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stack-overflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stack Overflow ——优秀的编程问答社区
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Github
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="cs-000">学会科学上网     CS 0.0.0</h1>
+<blockquote>
+<p>前言😊：学会科学上网是所有计算机科学专业同学的必备技能，海量资料需要通过无穷无尽的外网来查询；本教程主要是教会大家如何科学上网。</p>
+<p>📢Prerequisite：1.一颗完整的电脑      2.带上你的脑子</p>
+</blockquote>
+<h2 id="_1">一、如何正确的科学上网</h2>
+<blockquote>
+<p>谈到科学上网，部分同学可能只知道“科学上网”只是为了访问我们访问不到的外部世界，实际上，作为一名优秀的计算机练习生，我我们必须弄清楚什么是科学上网。</p>
+</blockquote>
+<h3 id="i">I. 什么是科学上网—代理</h3>
+<p>因为一些众所周知的原因，我们使用国内的宽带服务和通讯，访问不了一些特定的外国网站，比如著名的搜索引擎<a href="https://google.com">谷歌</a>。在这种情况下，我们需要一个神通广大的“中间人”——<strong>代理（proxy）</strong>。只要把我们想访问的网站信息告诉他，他就会帮我们访问，并把获取的信息原封不动（或者有所改动）地传回给我们。这个中间人就叫代理（是不是很像代购商呢？）。只要我们在网络上启用这个代理，就能轻松访问那些我们平常无法访问的网站。</p>
+<div class="admonition warning">
+<p class="admonition-title">注意你的隐私安全</p>
+<p>实际上，代理可以完全看到你的<strong>访问信息</strong>，同时也可以修改返回给你的信息，为了隐私安全性，要特别注意选取合适的代理提供商。一些打着“免费”旗号的代理，可能正在窃取你的隐私信息。</p>
+</div>
+<p><img alt="1" src="../src/1.png" />
+一般来说，这种代理的提供商有很多，有些是需要<strong>收费</strong>的，而有些则是<strong>免费</strong>的。有些代理很强大，在很多国家都架设了服务器。比如你使用了一个在美国的节点，那么就相当于你找了一个代购商在美国，它可以帮你访问在美国能访问到的网站。</p>
+<h3 id="ii">II.如何在你的计算机上使用代理</h3>
+<p>光有了代购商还不行，代购商必须要把东西送到你手上呀。在这一个过程中，代理软件就起到了作用，代理软件的作用就是在你的电脑上开启代理服务，把你的网络请求发送给代理而不是直接发给目标网址，代理再帮你访问，访问的数据返回给你。就像代购商一样，帮你完成了代购服务，但是最后东西还是到你手上。</p>
+<p>一般来说，最流行的代理软件是Clash，这是一个开源的、免费的软件，目前已经在 <code>Github</code> 上跑路了，庆幸的是，我这里还有一份备份，是Windows X86 版本的，随附。</p>
+<p><img alt="2" src="../src/2.png" /></p>
+<h4 id="clash">Clash教程</h4>
+<p>解压我提供的<code>Clash.rar</code>，会得到一个<code>Clash</code>文件夹，点击进入文件夹，打开名为 <code>Clash for Windows.exe</code> 的可执行程序，会出现Clash界面，如下图所示：</p>
+<div class="admonition tip">
+<p class="admonition-title">安装提示</p>
+<p>整个安装过程中，Windows可能会弹出各种各样的安全提醒界面，记得全部点<strong>【同意】、【是】</strong>   </p>
+</div>
+<p><img alt="image-20240722205518041" src="../src/3.png" /></p>
+<p>在 <code>常规</code> 界面中，我们需要点亮 <code>允许局域网连接</code> 、<code>IP6协议地址</code>、  <code>服务模式</code>右边的🌏图标，以及系统代理</p>
+<p>在 <code>配置</code> 界面中，我们需要下载订阅链接，下一步会详细说明。</p>
+<p>完成以上步骤，我们已经完成了Clash软件的配置，是不是十分简单😁</p>
+<h4 id="_2">购买代理提供商</h4>
+<p>实际上，有很多代理提供商，这里选择一个我常用的，网络稳定性比较好但是<strong>略贵</strong>的代理商freeking，教程如下：</p>
+<ol>
+<li>在浏览器中打开<a href="https://www.freeking.app/">FreeKing</a>，选择右上角的登录，没有账号就按步骤注册一个。</li>
+<li>登录成功后，点击最左边的侧边栏中的 <code>购买订阅</code>，然后选择套餐<code>免费体验</code></li>
+<li>点击后，在新跳转的界面点击  <code>下单</code> ，按步骤完成后点击侧边栏中的<code>仪表盘</code>，返回主界面</li>
+<li>下拉界面，在 <code>捷径</code> 中点击 <code>一键订阅</code>，选择<code>导入到 Clash for Windows</code></li>
+<li>回到你的Clash软件，查看配置中是否新增了 <code>Freeking</code>开头的配置名，单击选中该配置(左边竖条变为绿色)</li>
+</ol>
+<p>到这里你已经成功地购买了代理提供商，如果你还想有更好的体验，可以选择<strong>付费</strong>购买该代理商提供的套餐。</p>
+<p><img alt="image-20240722210625935" src="../src/4.png" /></p>
+<p><img alt="image-20240722210644163" src="../src/5.png" /></p>
+<p><img alt="image-20240722211141055" src="../src/6.png" /></p>
+<h4 id="_3">最后一步，开启科学上网</h4>
+<p>到这里只剩最后一步啦，你就可以开启科学上网了，步骤如下</p>
+<ol>
+<li>打开你的 Clash 软件，点击左侧侧边栏的 <code>代理</code>，进入 <code>代理</code> 界面后点击上面的 <code>全局</code>，切换到 <code>全局</code> 界面</li>
+<li>单击选择一个延迟较小的国家节点（韩国、日本、新加坡等都可），如果都显示超时，可以点击右侧的Wi-Fi图标进行刷新。如果多次刷新仍显示超时，请检查你的网络。</li>
+<li>点击左侧侧边栏中的 <code>常规</code> ，进入 <code>常规</code> 界面，开启 <code>系统代理</code> </li>
+<li>检查是否成功，请在浏览器中输入 <code>Google.com</code>，如果能够访问，说明你的科学上网成功</li>
+<li>如果不需要科学上网了，可以关闭系统代理或者Clash软件</li>
+</ol>
+<p><img alt="image-20240722211149838" src="../src/8.png" /></p>
+<h4 id="_4">注意事项</h4>
+<p>关闭电脑前需要先把Clash的系统代理或者软件关闭，如果直接关闭电脑，那么下次开机的时候可能出现连不上网的问题，这个时候需要重新打开Clash或者在系统设置里关闭<strong>系统代理</strong>。</p>
+<blockquote>
+<p>关闭系统代理的步骤（Windows 11系统）</p>
+<ol>
+<li>右键左下角的 Windows图标 （四个蓝方块，说的就是你），在弹出的菜单栏里选择【设置】</li>
+<li>在【设置】窗口中找到【网络与Internet】选项，点击进入</li>
+<li>在【网络与Internet】窗口中找到 【代理】选项，单击进入</li>
+<li>在【代理】窗口中找到 【使用代理服务器】选项，单击 【编辑】 进入</li>
+<li>在【编辑】 窗口中找到 【使用代理服务器】，把关掉即可</li>
+</ol>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">为什么需要这个步骤（原因）？</p>
+<p>如果在关闭电脑前没有关闭Clash的系统代理或软件，那么系统仍然会认为你在使用代理，但负责代理的软件实际上已经关闭了。这就像你去找一个已经关门的代购买东西，不仅代购的东西买不到，连正常的东西也买不到。网络代理也是一样，当你试图通过已关闭的代理服务器访问互联网时，就相当于试图访问一个已经关闭的服务器，结果自然是网络中断。因此，你需要关闭代理服务器，直接使用你的网络来访问正常的网址。</p>
+<p>Clash软件则自动化了这一过程，每次打开和关闭时，都会自动管理系统的代理服务器，确保网络连接的正常使用。</p>
+</div>
+<h2 id="_5">二、程序员必备的科学网站</h2>
+<div class="admonition note">
+<p class="admonition-title">科学网站的重要性</p>
+<p>作为一名程序员，在学会了如何进行科学上网后，就要知道有哪些【科学】网站，这些网站往往比国内的网站资源更丰富、功能更强大（最重要的是可能没有烦人的广告😇）</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">务必遵守法律法规</p>
+<p>网络不是法外之地，在使用科学网站时，要自觉遵守相关法律法规，不浏览具有<strong>政治</strong>问题的网站，不发表<strong>政治</strong>性评论，不加入具有争议性的群聊和议题，自觉做到爱国、守法。</p>
+</div>
+<h3 id="chrome">谷歌浏览器 Chrome</h3>
+<p>我不仅仅推荐你用谷歌进行学术相关的搜索，更鼓励你使用谷歌浏览器Chrome。以下几个点也许能够成为推荐谷歌浏览器Chrome的原因：</p>
+<ul>
+<li><strong>速度与性能</strong>：Chrome浏览器以其快速的页面加载速度和流畅的性能著称。它使用了高效的V8 JavaScript引擎，并且对HTML5和CSS3等新技术支持良好，能够更快速地渲染网页。</li>
+<li><strong>用户界面和体验</strong>：Chrome<strong>没有讨厌的广告</strong>，界面十分简洁干爽。</li>
+<li><strong>开发者工具</strong>：Chrome提供了强大的开发者工具（<strong>DevTools</strong>），方便前端开发者进行调试、性能分析、查看DOM结构和网络请求等。</li>
+</ul>
+<p><img alt="10" src="../src/10.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Edge—另一优秀的浏览器</p>
+<p>除了Google旗下的Chrome，Microsoft旗下的Edge浏览器也是一款优秀的浏览器。同样没有广告、纯净的Edge为我们提供了新的人工智能助手——Bing。类似于ChatGPT，Bing可以支持实时问答，检索需要的资料等功能。</p>
+<p>如果要使用智能助手Bing，请确保您已经开启了<strong>代理服务</strong>。</p>
+</div>
+<h3 id="stack-overflow">Stack Overflow ——优秀的编程问答社区</h3>
+<p>与某个C开头N结尾的网站类似，<strong>Stack Overflow</strong> 是一款编程相关的问答网站。可以这么说，Stack Overflow 是全球最大的程序员交流网站之一，在这里你几乎可以找到所有相关的技术性问题，更重要的是，没有讨厌的弹窗和广告。相信这里会是你运用检索能力解决编程问题的第一站。</p>
+<p><img alt="11" src="../src/11.png" /></p>
+<h3 id="github">Github</h3>
+<p>相信不需要我进行介绍了，GitHub 是一个面向软件开发人员的代码托管平台，广泛用于版本控制和协作开发。自2008年推出以来，它已成为全球最大的开源软件项目托管平台。你可以使用Github：</p>
+<ul>
+<li><strong>进行版本控制和代码托管</strong>：GitHub基于Git版本控制系统，允许开发人员跟踪和管理代码的变化。每次提交代码的更改都会被记录，开发人员可以查看历史版本、回滚到之前的版本，或比较不同版本之间的差异。开发人员可以在GitHub上创建代码仓库（repository），托管他们的项目。仓库可以是公共的（任何人都可以查看和贡献）或私有的（只有受邀人员可以访问）。</li>
+<li><strong>开源社区</strong>：GitHub是开源社区的重要平台，许多知名的开源项目都托管在这里。用户可以浏览、克隆和贡献开源项目，参与社区讨论，学习和分享编程知识。</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Git—版本控制系统</p>
+<p>Git是全球知名的代码版本控制系统。如果您还不了解Git，可以点击<a href="https://liaoxuefeng.com/books/git/introduction/">此处</a>学习Git相关的基本知识。</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
